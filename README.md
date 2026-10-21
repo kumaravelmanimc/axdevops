@@ -1,6 +1,6 @@
 # Axpert DevOps Suite
 
-Static, GitHub Pages-ready product site for Axpert Agent and AxpertOps.
+Static, GitHub Pages-ready product site for Axpert Assistant and AxpertOps.
 
 ## Local preview
 
