@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Axpert DevOps Suite combines project-aware AI development with live operational control for Axpert environments.">
+  <meta name="theme-color" content="#0b1d33">
+  <title>Axpert DevOps Suite | Axpert Agent + AxpertOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Axcord home"><span class="brand-mark">AX</span><span>AXCORD</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#agent">Axpert Agent</a><a href="#ops">AxpertOps</a><a href="#together">Together</a><a class="nav-cta" href="#contact">Talk to us</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">AXPERT DEVOPS SUITE</p>
+        <h1>Build with intelligence.<br><span>Operate with confidence.</span></h1>
+        <p class="hero-lead">Bring AI-assisted Axpert development and live operational control into one practical suite, grounded in your projects, infrastructure, and deployment standards.</p>
+        <div class="hero-actions"><a class="button primary" href="#agent">Explore the suite</a><a class="button secondary" href="#contact">Plan a technical review</a></div>
+        <ul class="trust-line"><li>Project-aware</li><li>Security-conscious</li><li>Deployment-ready</li></ul>
+      </div>
+      <div class="hero-visual reveal" aria-label="Axpert Agent and AxpertOps working as one suite">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <article class="product-node agent-node"><span class="node-icon">AI</span><div><strong>Axpert Agent</strong><small>Develop and modernize</small></div></article>
+        <article class="product-node ops-node"><span class="node-icon">OPS</span><div><strong>AxpertOps</strong><small>Observe and control</small></div></article>
+        <div class="suite-core"><span>AXPERT</span><strong>DEVOPS</strong><small>change to uptime</small></div>
+        <span class="signal s1"></span><span class="signal s2"></span><span class="signal s3"></span>
+      </div>
+    </section>
+
+    <section class="suite-intro section narrow reveal">
+      <p class="eyebrow">ONE CONTINUOUS VIEW</p>
+      <h2>From a requested change to a healthy running environment</h2>
+      <p>Axpert Agent helps teams create, review, and package supported project changes. AxpertOps helps them understand and manage the infrastructure and databases those changes depend on.</p>
+      <div class="flow" aria-label="Development to operations lifecycle">
+        <span>Request</span><i></i><span>Understand</span><i></i><span>Build</span><i></i><span>Review</span><i></i><span>Deploy</span><i></i><span>Operate</span>
+      </div>
+    </section>
+
+    <section id="agent" class="product-section section">
+      <div class="section-heading reveal"><p class="eyebrow blue">01 / BUILD</p><h2>Axpert Agent</h2><p>A secure Windows desktop experience backed by private hosted skills and project-aware local execution.</p></div>
+      <div class="agent-layout">
+        <div class="workflow-panel reveal">
+          <div class="window-bar"><span></span><span></span><span></span><b>Axpert Assistant</b></div>
+          <div class="agent-ui">
+            <aside><strong>Development</strong><span class="active">UI layer</span><span>Create TStruct</span><span>Custom page</span><span>FastReport</span><strong>Review</strong><span>Definitions</span><span>ADB compatibility</span></aside>
+            <div class="agent-form"><small>GUIDED WORKFLOW</small><h3>Build with the right context</h3><label>Project <b>Selected from axapps.xml</b></label><label>Structure <b>Validated against metadata</b></label><label>Requested change <b>Clear, scoped intent</b></label><button type="button">Collect evidence and continue</button></div>
+          </div>
+        </div>
+        <div class="capability-list reveal">
+          <article><span>01</span><div><h3>Guided Axpert workflows</h3><p>Purpose-built intake for UI layers, TStructs, iViews, custom pages, FastReports, API documentation, definition review, and imports.</p></div></article>
+          <article><span>02</span><div><h3>Project-aware evidence</h3><p>Understands the mapped AxpertWeb workspace, provider, metadata, and supported extension points before acting.</p></div></article>
+          <article><span>03</span><div><h3>Controlled local actions</h3><p>Constrained workspace access and transactional, allow-listed database changes for supported development workflows.</p></div></article>
+          <article><span>04</span><div><h3>Reviewable delivery</h3><p>Creates validated definitions, deployment-ready assets, timestamped patches, and clear manifests.</p></div></article>
+        </div>
+      </div>
+      <div class="security-strip reveal"><div><span class="lock">&#9679;</span><h3>A deliberate security boundary</h3></div><p>Skills and model credentials remain on the agent server. Database credentials are resolved locally, decrypted only in memory, and never sent to the model. General Chat stays read-only while implementation uses explicit guided workflows.</p></div>
+    </section>
+
+    <section id="ops" class="ops-section section">
+      <div class="section-heading light reveal"><p class="eyebrow cyan">02 / OPERATE</p><h2>AxpertOps</h2><p>An authenticated control center for the infrastructure and databases that keep Axpert applications running.</p></div>
+      <div class="ops-dashboard reveal">
+        <div class="ops-tabs" role="tablist" aria-label="AxpertOps capabilities">
+          <button class="is-active" data-tab="server">Server</button><button data-tab="iis">IIS</button><button data-tab="rabbit">RabbitMQ</button><button data-tab="redis">Redis</button><button data-tab="projects">Projects</button><button data-tab="database">DB monitoring</button>
+        </div>
+        <div class="ops-screen">
+          <div class="ops-summary"><small id="opsKicker">SERVER OVERVIEW</small><h3 id="opsTitle">Host resources at a glance</h3><p id="opsText">CPU, memory, uptime, processors, storage volumes, and memory composition across core services.</p></div>
+          <div id="opsMetrics" class="metric-grid"><article><span>CPU load</span><strong>Live</strong></article><article><span>Memory</span><strong>Tracked</strong></article><article><span>Storage</span><strong>Visible</strong></article><article><span>Uptime</span><strong>Measured</strong></article></div>
+          <div class="activity-card"><div><span>Operational status</span><b>Connected view</b></div><div class="activity-bars"><i style="--v:86%"></i><i style="--v:64%"></i><i style="--v:78%"></i><i style="--v:51%"></i><i style="--v:91%"></i><i style="--v:72%"></i></div></div>
+        </div>
+      </div>
+      <div class="ops-grid reveal">
+        <article><b>SERVER</b><p>Resource and storage visibility with service-level memory composition.</p></article><article><b>IIS</b><p>Topology, pools, worker processes, active requests, recycle settings, and controlled actions.</p></article><article><b>RABBITMQ</b><p>Cluster health, queues, consumers, users, virtual hosts, and permissions.</p></article><article><b>REDIS</b><p>Discovery, health, memory, clients, persistence, authentication, and service actions.</p></article><article><b>PROJECTS</b><p>Axpert project, schema, database instance, IIS mapping, and configuration discovery.</p></article><article><b>DATABASES</b><p>Oracle and PostgreSQL activity, SQL, jobs, schemas, administration, and read-only queries.</p></article>
+      </div>
+    </section>
+
+    <section id="together" class="together section">
+      <div class="section-heading reveal"><p class="eyebrow">03 / TOGETHER</p><h2>A stronger operating model for Axpert teams</h2><p>The suite connects development context with operational reality without pretending they are the same job.</p></div>
+      <div class="outcomes reveal">
+        <article><span>01</span><h3>Faster, more consistent delivery</h3><p>Reusable product knowledge and guided workflows reduce rediscovery and produce predictable review artifacts.</p></article>
+        <article><span>02</span><h3>Clearer technical governance</h3><p>Supported paths, scoped actions, local validation, and visible deployment packages keep changes explainable.</p></article>
+        <article><span>03</span><h3>Better incident context</h3><p>See Axpert projects alongside the services, application pools, message brokers, caches, and databases they use.</p></article>
+      </div>
+      <div class="deployment reveal"><div><p class="eyebrow">DEPLOYMENT PRINCIPLE</p><h3>Private by design. Practical by deployment.</h3></div><p>Run the agent service behind trusted infrastructure and deploy AxpertOps on an internal network or VPN with HTTPS, dedicated service identities, protected application data, and least-privilege access.</p></div>
+    </section>
+
+    <section id="contact" class="contact section reveal">
+      <p class="eyebrow">START WITH THE ENVIRONMENT</p>
+      <h2>Plan a focused technical review</h2>
+      <p>Confirm the target Axpert environments, database providers, hosting topology, security controls, user scope, trial plan, and rollout ownership.</p>
+      <a class="button primary" href="mailto:info@axcord.com?subject=Axpert%20DevOps%20Suite%20technical%20review">Contact Axcord</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">AX</span><span>AXCORD</span></a><p>Axpert DevOps Suite - develop smarter, operate with confidence.</p><a href="#top">Back to top</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
