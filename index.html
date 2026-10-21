@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#0b1d33">
   <title>Axpert DevOps Suite | Axpert Agent + AxpertOps</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="showcase.css">
 </head>
 <body>
   <header class="site-header">
@@ -46,20 +47,15 @@
 
     <section id="agent" class="product-section section">
       <div class="section-heading reveal"><p class="eyebrow blue">01 / BUILD</p><h2>Axpert Agent</h2><p>A secure Windows desktop experience backed by private hosted skills and project-aware local execution.</p></div>
-      <div class="agent-layout">
-        <div class="workflow-panel reveal">
-          <div class="window-bar"><span></span><span></span><span></span><b>Axpert Assistant</b></div>
-          <div class="agent-ui">
-            <aside><strong>Development</strong><span class="active">UI layer</span><span>Create TStruct</span><span>Custom page</span><span>FastReport</span><strong>Review</strong><span>Definitions</span><span>ADB compatibility</span></aside>
-            <div class="agent-form"><small>GUIDED WORKFLOW</small><h3>Build with the right context</h3><label>Project <b>Selected from axapps.xml</b></label><label>Structure <b>Validated against metadata</b></label><label>Requested change <b>Clear, scoped intent</b></label><button type="button">Collect evidence and continue</button></div>
-          </div>
-        </div>
+      <figure class="product-shot reveal"><img src="assets/screenshots/axpert-agent.png" alt="Axpert Assistant desktop application showing guided development and review workflows" loading="lazy"><figcaption><b>A focused desktop workspace.</b> General questions stay separate from guided workflows for TStructs, custom pages, FastReports, customization, import/export, and bulk review.</figcaption></figure>
+      <div class="agent-layout compact">
         <div class="capability-list reveal">
           <article><span>01</span><div><h3>Guided Axpert workflows</h3><p>Purpose-built intake for UI layers, TStructs, iViews, custom pages, FastReports, API documentation, definition review, and imports.</p></div></article>
           <article><span>02</span><div><h3>Project-aware evidence</h3><p>Understands the mapped AxpertWeb workspace, provider, metadata, and supported extension points before acting.</p></div></article>
           <article><span>03</span><div><h3>Controlled local actions</h3><p>Constrained workspace access and transactional, allow-listed database changes for supported development workflows.</p></div></article>
           <article><span>04</span><div><h3>Reviewable delivery</h3><p>Creates validated definitions, deployment-ready assets, timestamped patches, and clear manifests.</p></div></article>
         </div>
+        <div class="how-panel reveal"><p class="eyebrow blue">HOW IT WORKS</p><ol><li><b>Select the project and workflow.</b><span>The desktop discovers configured Axpert projects and opens a purpose-built intake instead of a generic prompt.</span></li><li><b>Collect authoritative local context.</b><span>Supported files, structure metadata, provider information, and existing overrides are gathered before generation.</span></li><li><b>Generate through private product skills.</b><span>The agent applies Axpert-specific rules and requests only the narrowly scoped local tools required by the workflow.</span></li><li><b>Validate, execute, and package.</b><span>The desktop enforces access policies, verifies outputs, performs approved local actions, and creates reviewable deployment artifacts.</span></li></ol></div>
       </div>
       <div class="security-strip reveal"><div><span class="lock">&#9679;</span><h3>A deliberate security boundary</h3></div><p>Skills and model credentials remain on the agent server. Database credentials are resolved locally, decrypted only in memory, and never sent to the model. General Chat stays read-only while implementation uses explicit guided workflows.</p></div>
     </section>
@@ -70,15 +66,12 @@
         <div class="ops-tabs" role="tablist" aria-label="AxpertOps capabilities">
           <button class="is-active" data-tab="server">Server</button><button data-tab="iis">IIS</button><button data-tab="rabbit">RabbitMQ</button><button data-tab="redis">Redis</button><button data-tab="projects">Projects</button><button data-tab="database">DB monitoring</button>
         </div>
-        <div class="ops-screen">
-          <div class="ops-summary"><small id="opsKicker">SERVER OVERVIEW</small><h3 id="opsTitle">Host resources at a glance</h3><p id="opsText">CPU, memory, uptime, processors, storage volumes, and memory composition across core services.</p></div>
-          <div id="opsMetrics" class="metric-grid"><article><span>CPU load</span><strong>Live</strong></article><article><span>Memory</span><strong>Tracked</strong></article><article><span>Storage</span><strong>Visible</strong></article><article><span>Uptime</span><strong>Measured</strong></article></div>
-          <div class="activity-card"><div><span>Operational status</span><b>Connected view</b></div><div class="activity-bars"><i style="--v:86%"></i><i style="--v:64%"></i><i style="--v:78%"></i><i style="--v:51%"></i><i style="--v:91%"></i><i style="--v:72%"></i></div></div>
-        </div>
+        <div class="ops-screen"><div class="ops-summary"><small id="opsKicker">SERVER OVERVIEW</small><h3 id="opsTitle">Host resources at a glance</h3><p id="opsText">CPU, memory, uptime, processors, storage volumes, and memory composition across core services.</p></div><figure class="ops-shot"><img id="opsImage" src="assets/screenshots/axpertops-server.png" alt="AxpertOps server overview" loading="lazy"></figure></div>
       </div>
       <div class="ops-grid reveal">
         <article><b>SERVER</b><p>Resource and storage visibility with service-level memory composition.</p></article><article><b>IIS</b><p>Topology, pools, worker processes, active requests, recycle settings, and controlled actions.</p></article><article><b>RABBITMQ</b><p>Cluster health, queues, consumers, users, virtual hosts, and permissions.</p></article><article><b>REDIS</b><p>Discovery, health, memory, clients, persistence, authentication, and service actions.</p></article><article><b>PROJECTS</b><p>Axpert project, schema, database instance, IIS mapping, and configuration discovery.</p></article><article><b>DATABASES</b><p>Oracle and PostgreSQL activity, SQL, jobs, schemas, administration, and read-only queries.</p></article>
       </div>
+      <div class="ops-how reveal"><div><p class="eyebrow cyan">HOW IT WORKS</p><h3>Discover, connect, observe, and act</h3></div><div class="ops-steps"><article><b>1. Discover</b><p>Read server resources, exported IIS topology, configured brokers and caches, and Axpert project metadata.</p></article><article><b>2. Connect</b><p>Use server-side credentials and explicit database sessions without returning secrets to the browser.</p></article><article><b>3. Observe</b><p>Bring health, activity, capacity, mappings, and configuration warnings into a consistent operational view.</p></article><article><b>4. Act carefully</b><p>Expose authenticated, deliberate controls for approved IIS, RabbitMQ, Redis, and database operations.</p></article></div></div>
     </section>
 
     <section id="together" class="together section">
@@ -88,6 +81,7 @@
         <article><span>02</span><h3>Clearer technical governance</h3><p>Supported paths, scoped actions, local validation, and visible deployment packages keep changes explainable.</p></article>
         <article><span>03</span><h3>Better incident context</h3><p>See Axpert projects alongside the services, application pools, message brokers, caches, and databases they use.</p></article>
       </div>
+      <div class="benefit-map reveal"><div><p class="eyebrow blue">PRACTICAL BENEFITS</p><h3>What changes for the team</h3></div><dl><div><dt>Less rediscovery</dt><dd>Project metadata, implementation rules, and infrastructure context are collected consistently.</dd></div><div><dt>Safer execution</dt><dd>Workspace boundaries, allow-listed operations, transactional changes, and authentication constrain actions.</dd></div><div><dt>Faster diagnosis</dt><dd>Application, service, cache, broker, and database signals can be examined without switching across unrelated tools.</dd></div><div><dt>Cleaner handover</dt><dd>Validated outputs, patch manifests, and visible operational state improve review and deployment conversations.</dd></div></dl></div>
       <div class="deployment reveal"><div><p class="eyebrow">DEPLOYMENT PRINCIPLE</p><h3>Private by design. Practical by deployment.</h3></div><p>Run the agent service behind trusted infrastructure and deploy AxpertOps on an internal network or VPN with HTTPS, dedicated service identities, protected application data, and least-privilege access.</p></div>
     </section>
 
