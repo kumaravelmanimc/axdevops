@@ -5,6 +5,7 @@
 /* 1.48 public-site refresh: light theme, richer product highlights, one product image */
 body.compact-site{background:#fff;color:var(--ink)}
 .compact-site .site-header{background:rgba(255,255,255,.96);color:var(--ink);border-bottom:1px solid var(--line);box-shadow:0 6px 22px rgba(16,42,68,.06)}
+.compact-site .brand img{display:block;width:auto;height:38px;max-width:215px;object-fit:contain}
 .compact-site .site-header nav a{color:#52647a}.compact-site .site-header nav a:hover,.compact-site .site-header nav a.active{color:var(--blue)}
 .compact-site .nav-cta{color:var(--blue)!important;border-color:#b9c8ee!important;background:#f6f8ff}.compact-site .nav-toggle{color:var(--ink)}
 .compact-site .page-hero{background:linear-gradient(145deg,#fff 0%,#f4f7ff 58%,#eefafa 100%);color:var(--ink)}
@@ -18,4 +19,4 @@ body.compact-site{background:#fff;color:var(--ink)}
 .compact-site .curiosity-card{background:linear-gradient(120deg,#edf3ff,#eefafa);border:1px solid #d7e2f2}
 .compact-site footer.compact-footer{background:#f7f9fc;border-top:1px solid var(--line)}
 @media(max-width:900px){.compact-site .feature-grid{grid-template-columns:1fr 1fr}.compact-site nav.open{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 25px rgba(16,42,68,.1)}}
-@media(max-width:620px){.compact-site .feature-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.compact-site .brand img{height:32px;max-width:178px}.compact-site .feature-grid{grid-template-columns:1fr}}
